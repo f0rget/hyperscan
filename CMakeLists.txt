@@ -305,7 +305,7 @@ if (RELEASE_BUILD)
     endif()
 endif()
 
-if (CMAKE_SYSTEM_NAME MATCHES "Linux")
+if (CMAKE_SYSTEM_NAME MATCHES "Linux" AND FAT_RUNTIME)
     # This is a Linux-only feature for now - requires platform support
     # elsewhere
     message(STATUS "generator is ${CMAKE_GENERATOR}")
